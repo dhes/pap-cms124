@@ -1,0 +1,119 @@
+{
+  "resourceType": "MeasureReport",
+  "id": "f8a3a4bb-025d-4c43-86dd-3eb71f212d1e",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/test-case-cqfm"
+    ]
+  },
+  "contained": [
+    {
+      "resourceType": "Parameters",
+      "id": "8829c93a-c046-4ac4-9a73-8cb988f536f0-parameters",
+      "parameter": [
+        {
+          "name": "subject",
+          "valueString": "25727adc-4495-4e13-9dfc-8b9cb6bf17b9"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-inputParameters",
+      "valueReference": {
+        "reference": "#8829c93a-c046-4ac4-9a73-8cb988f536f0-parameters"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-testCaseDescription",
+      "valueMarkdown": "Female 24 years old with Cervical Cytology performed during MP"
+    }
+  ],
+  "modifierExtension": [
+    {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-isTestCase",
+      "valueBoolean": true
+    }
+  ],
+  "status": "complete",
+  "type": "individual",
+  "measure": "https://madie.cms.gov/Measure/CervicalCancerScreeningFHIR",
+  "period": {
+    "start": "2025-01-01",
+    "end": "2025-12-31"
+  },
+  "group": [
+    {
+      "id": "64d29f68f9c3ae6981ef507d",
+      "population": [
+        {
+          "id": "0CB398EC-F7C3-4882-98FF-D9E0E3E62B4F",
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population",
+                "display": "Initial Population"
+              }
+            ]
+          },
+          "count": 1
+        },
+        {
+          "id": "C02AA51E-4436-4034-A67F-DB42C22EB337",
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "denominator",
+                "display": "Denominator"
+              }
+            ]
+          },
+          "count": 1
+        },
+        {
+          "id": "2EF6ABDF-E416-44B8-928B-DCC7D7C55860",
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "denominator-exclusion",
+                "display": "Denominator Exclusion"
+              }
+            ]
+          },
+          "count": 0
+        },
+        {
+          "id": "56088E3D-0DEE-43D2-9866-1F38ACB030CB",
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "numerator",
+                "display": "Numerator"
+              }
+            ]
+          },
+          "count": 1
+        }
+      ],
+      "measureScore": {
+        "value": 1
+      }
+    }
+  ],
+  "evaluatedResource": [
+    {
+      "reference": "Patient/25727adc-4495-4e13-9dfc-8b9cb6bf17b9"
+    },
+    {
+      "reference": "Encounter/c5439d39-c4d9-4e12-a342-730032c0d591"
+    },
+    {
+      "reference": "Observation/1a715df0-c18b-4bb3-8b5f-9731392f438c"
+    }
+  ]
+}

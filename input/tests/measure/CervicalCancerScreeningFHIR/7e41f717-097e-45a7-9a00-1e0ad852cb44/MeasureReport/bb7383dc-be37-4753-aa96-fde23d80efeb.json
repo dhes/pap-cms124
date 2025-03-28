@@ -1,0 +1,119 @@
+{
+  "resourceType": "MeasureReport",
+  "id": "bb7383dc-be37-4753-aa96-fde23d80efeb",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/test-case-cqfm"
+    ]
+  },
+  "contained": [
+    {
+      "resourceType": "Parameters",
+      "id": "da6d0648-e244-4682-84f3-035a8fbe8338-parameters",
+      "parameter": [
+        {
+          "name": "subject",
+          "valueString": "7e41f717-097e-45a7-9a00-1e0ad852cb44"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-inputParameters",
+      "valueReference": {
+        "reference": "#da6d0648-e244-4682-84f3-035a8fbe8338-parameters"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-testCaseDescription",
+      "valueMarkdown": "Palliative Care Condition - For meeting 100% coverage"
+    }
+  ],
+  "modifierExtension": [
+    {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-isTestCase",
+      "valueBoolean": true
+    }
+  ],
+  "status": "complete",
+  "type": "individual",
+  "measure": "https://madie.cms.gov/Measure/CervicalCancerScreeningFHIR",
+  "period": {
+    "start": "2025-01-01",
+    "end": "2025-12-31"
+  },
+  "group": [
+    {
+      "id": "64d29f68f9c3ae6981ef507d",
+      "population": [
+        {
+          "id": "0CB398EC-F7C3-4882-98FF-D9E0E3E62B4F",
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population",
+                "display": "Initial Population"
+              }
+            ]
+          },
+          "count": 1
+        },
+        {
+          "id": "C02AA51E-4436-4034-A67F-DB42C22EB337",
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "denominator",
+                "display": "Denominator"
+              }
+            ]
+          },
+          "count": 1
+        },
+        {
+          "id": "2EF6ABDF-E416-44B8-928B-DCC7D7C55860",
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "denominator-exclusion",
+                "display": "Denominator Exclusion"
+              }
+            ]
+          },
+          "count": 1
+        },
+        {
+          "id": "56088E3D-0DEE-43D2-9866-1F38ACB030CB",
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "numerator",
+                "display": "Numerator"
+              }
+            ]
+          },
+          "count": 0
+        }
+      ],
+      "measureScore": {
+        "value": 1
+      }
+    }
+  ],
+  "evaluatedResource": [
+    {
+      "reference": "Patient/7e41f717-097e-45a7-9a00-1e0ad852cb44"
+    },
+    {
+      "reference": "Encounter/cd052fc5-ce2d-4897-9fee-462b8d0117ac"
+    },
+    {
+      "reference": "Condition/9c26b7f6-762c-437b-86bb-9ba5a76bc559"
+    }
+  ]
+}

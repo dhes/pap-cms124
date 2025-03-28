@@ -1,0 +1,119 @@
+{
+  "resourceType": "MeasureReport",
+  "id": "b9f0da64-58fc-41ad-8d01-8a6151e33b74",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/test-case-cqfm"
+    ]
+  },
+  "contained": [
+    {
+      "resourceType": "Parameters",
+      "id": "644a91f9-edfa-4002-8ed1-e44e7701f164-parameters",
+      "parameter": [
+        {
+          "name": "subject",
+          "valueString": "c0d1f27d-249b-4d74-a493-a4796fb8e833"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-inputParameters",
+      "valueReference": {
+        "reference": "#644a91f9-edfa-4002-8ed1-e44e7701f164-parameters"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-testCaseDescription",
+      "valueMarkdown": "Female 24 years old with Hospice Services performed before MP"
+    }
+  ],
+  "modifierExtension": [
+    {
+      "url": "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-isTestCase",
+      "valueBoolean": true
+    }
+  ],
+  "status": "complete",
+  "type": "individual",
+  "measure": "https://madie.cms.gov/Measure/CervicalCancerScreeningFHIR",
+  "period": {
+    "start": "2025-01-01",
+    "end": "2025-12-31"
+  },
+  "group": [
+    {
+      "id": "64d29f68f9c3ae6981ef507d",
+      "population": [
+        {
+          "id": "0CB398EC-F7C3-4882-98FF-D9E0E3E62B4F",
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "initial-population",
+                "display": "Initial Population"
+              }
+            ]
+          },
+          "count": 1
+        },
+        {
+          "id": "C02AA51E-4436-4034-A67F-DB42C22EB337",
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "denominator",
+                "display": "Denominator"
+              }
+            ]
+          },
+          "count": 1
+        },
+        {
+          "id": "2EF6ABDF-E416-44B8-928B-DCC7D7C55860",
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "denominator-exclusion",
+                "display": "Denominator Exclusion"
+              }
+            ]
+          },
+          "count": 0
+        },
+        {
+          "id": "56088E3D-0DEE-43D2-9866-1F38ACB030CB",
+          "code": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/measure-population",
+                "code": "numerator",
+                "display": "Numerator"
+              }
+            ]
+          },
+          "count": 0
+        }
+      ],
+      "measureScore": {
+        "value": 1
+      }
+    }
+  ],
+  "evaluatedResource": [
+    {
+      "reference": "Patient/c0d1f27d-249b-4d74-a493-a4796fb8e833"
+    },
+    {
+      "reference": "Encounter/9b6c33a5-a2dd-47cc-9fe0-dd3dbcd8ac93"
+    },
+    {
+      "reference": "Procedure/119db4d7-7644-4c76-b707-ee6e975d7fef"
+    }
+  ]
+}

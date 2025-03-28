@@ -1,0 +1,32 @@
+{
+  "resourceType": "Procedure",
+  "id": "07150d3b-1ab6-49ee-8d1a-0d1cfb494112",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-recorded",
+      "valueDateTime": "2025-12-31T23:00:00.000Z"
+    }
+  ],
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "116140006",
+        "display": "Total hysterectomy (procedure)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Patient-1"
+  },
+  "performedPeriod": {
+    "start": "2025-12-31T23:00:00.000Z",
+    "end": "2025-12-31T23:59:00.000Z"
+  }
+}

@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 // Configuration
-const sourceDir = 'CMS153FHIR-v0.2.000-FHIR4-TestCases';
-const destDir = 'input/tests/measure/ChlamydiaScreeninginWomenFHIR';
+const sourceDir = 'CMS124FHIR-v0.1.000-FHIR4-TestCases';
+const destDir = 'input/tests/measure/CervicalCancerScreeningFHIR';
 
 // Ensure the destination directory exists
 if (!fs.existsSync(destDir)) {
