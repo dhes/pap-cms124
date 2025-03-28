@@ -24,7 +24,7 @@
     }
   ],
   "subject": {
-    "reference": "Patient/Patient-12"
+    "reference": "908f935e-43b9-4666-982a-f211d1cfcd50"
   },
   "period": {
     "start": "2025-01-01T01:00:00.000Z",

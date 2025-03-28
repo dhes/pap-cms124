@@ -23,7 +23,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/Patient-3"
+    "reference": "Patient/3e21058f-64cc-4b0a-8c84-1122df974dae"
   },
   "performedPeriod": {
     "start": "2026-01-01T01:00:00.000Z",

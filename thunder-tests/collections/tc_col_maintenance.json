@@ -1,0 +1,38 @@
+{
+    "_id": "90e5b312-20ea-478e-8579-8ef0270b4a60",
+    "colName": "maintenance",
+    "created": "2025-03-28T04:44:08.434Z",
+    "sortNum": 10000,
+    "folders": [],
+    "requests": [
+        {
+            "_id": "11868ac0-bac2-41ea-87db-e1bd8ed8dd37",
+            "colId": "90e5b312-20ea-478e-8579-8ef0270b4a60",
+            "containerId": "",
+            "name": "POST main bundle",
+            "url": "",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-03-28T04:46:31.730Z",
+            "modified": "2025-03-28T04:46:57.767Z",
+            "headers": [],
+            "body": {
+                "type": "binary",
+                "raw": "",
+                "form": [],
+                "binary": "../bundles/measure/CervicalCancerScreeningFHIR/CervicalCancerScreeningFHIR-bundle.json"
+            }
+        }
+    ],
+    "settings": {
+        "headers": [
+            {
+                "name": "Content-Type",
+                "value": "application/fhir+json"
+            }
+        ],
+        "options": {
+            "baseUrl": "{{FHIR_SERVER_URL}}"
+        }
+    }
+}
